@@ -143,7 +143,11 @@
 			<artifactId>sdl-deltalake_${scala.minor.version}</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
-
+    <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>10.2.0.jre11</version>
+    </dependency>
 		<!-- override scope for spark dependencies to include/exclude them correctly for the fat-jar -->
 		<!-- note that the corresponding profile defining spark.deps.scope is inherited from sdl-parent -->
 		<dependency>
